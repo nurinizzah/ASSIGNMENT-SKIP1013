@@ -1,0 +1,80 @@
+package Assignment1;
+import java.util.Scanner;
+
+public class UniversityStudent {
+
+	public static void main(String[] args) {
+		String name;
+		String qualificationlevel;
+		int age;
+		int year;
+		int phoneNum;
+		int matricNum;
+		double totalamount;
+		double allowance;
+		double fees;
+		double mealsExpense;
+		double laundryExpense;
+		double phoneBills;
+		double books;
+		double totalbalance;
+		double totaladded;
+		double totalsaving;
+		double totalAll;
+		
+		Scanner scan = new Scanner(System.in);
+		
+		System.out.println("===============WELCOME TO MINI ACCOUNTANT CALCULATOR===============");
+		System.out.println("This system is to help student to know how much money they had expense in a month");
+		System.out.println("Please fill in the blank for the requirement");
+		System.out.println("");
+		
+		System.out.println("***************Section A***************");
+		System.out.println("Please enter your name = ");
+		name=scan.next();
+		System.out.println("Please enter your age = ");
+		age=scan.nextInt();
+		System.out.println("Please enter your matric number = ");
+		matricNum=scan.nextInt();
+		System.out.println("What is your current year studies = ");
+		year=scan.nextInt();
+		System.out.println("Please enter your qualification level (Diploma, FoundationDegree , BachelorsDegree, MasterDegree, PHD) = ");
+		qualificationlevel=scan.next();
+		System.out.println("****************************************");
+		System.out.println("");
+		
+		System.out.println("***************Section B***************");
+		System.out.println("Please enter your allowance = RM");
+		allowance=scan.nextDouble();
+		System.out.println("Please enter your university fees = RM");
+		fees=scan.nextDouble();
+		System.out.println("Please enter your total meals expense in a day = RM");
+		mealsExpense=scan.nextDouble();
+		System.out.println("Please enter your total laundry expense in a week = RM");
+		laundryExpense=scan.nextDouble();
+		System.out.println("Please enter your telephone bills for a month = RM");
+		phoneBills=scan.nextDouble();
+		System.out.println("Please enter your total expenses for books and stationaries = RM");
+		books=scan.nextDouble();
+		System.out.println("****************************************");
+		System.out.println("");
+		
+		System.out.println("***************Section C***************");
+		totalamount=allowance/6;
+		System.out.printf("Your total amount in your account for each month is RM %.2f" , totalamount);
+		System.out.println("");
+		System.out.println("Please enter your total money added = RM");
+		totaladded=scan.nextDouble();
+		totalAll=(fees+(mealsExpense*30)+(laundryExpense*4)+phoneBills+books);
+		System.out.printf("All the total expenses for you in a month is RM %.2f" , totalAll);
+		System.out.println("");
+		totalbalance=totalamount-totalAll+totaladded;
+		System.out.printf("Your total balance in your account after you finish settling all the expenses is RM %.2f" , totalbalance);
+		System.out.println("");
+		totalsaving=(30*totalbalance)/100;
+		System.out.printf("Your total amount for saving in this month is RM %.2f" , totalsaving);
+		System.out.println("");
+		System.out.println("***************************************");
+	}
+
+}
