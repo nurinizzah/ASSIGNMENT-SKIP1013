@@ -1,0 +1,106 @@
+package selfProgramming;
+import java.util.Scanner;
+public class Asg1Salary {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int ID;
+		int client;
+		String Name;
+		double NRIC;
+		double basicsalary = 1200;
+		double bonus, statutorycontribution;
+		double netsalary, variablepay;
+		double EPF, SOCSO, tax;
+		double petrolallowance;
+		double mobileallowance;
+		
+		Scanner input = new Scanner (System.in);
+		
+		System.out.println("_________________________________________________________________");
+		System.out.println("---------------[Welcome to UUM Salary Calculator]----------------");
+		System.out.println("_________________________________________________________________");
+		System.out.println();
+		System.out.println("\r\n"
+				+ "This program is to help new employees to calculate their salaries\n"
+				+ " which have been added and subtracted by various sectors such as\n"
+				+ " bonuses, taxes, EPF, SOCSO and so on");
+		System.out.println();
+		System.out.println("_________________________________________________________________");
+		System.out.println();
+		
+		System.out.println("--------------------------[Section 1]----------------------------");
+		System.out.println();
+		
+		System.out.println("Please enter your name: ");
+		Name = input.nextLine();
+		
+		System.out.println("Please enter your ID: ");
+		ID = input.nextInt();
+		
+		System.out.println("Please enter your NRIC (without (-)): ");
+		NRIC = input.nextDouble();
+		
+		System.out.println("_________________________________________________________________");
+		System.out.println();
+		System.out.println("--------------------------[Section 2]----------------------------");
+		System.out.println();
+		
+		System.out.println("Basic Salary: RM " +basicsalary);
+		System.out.println("The salary is not include with variable pay which is\n "
+						+ "petrol allowance and mobile allowance");
+		System.out.println();
+		
+		System.out.println("************************* Variable Pay **************************");
+		petrolallowance = (0.5*200);
+		System.out.println("Your petrol allowance for this month is: RM " +petrolallowance);
+		mobileallowance = (50*1);
+		System.out.println("Your mobile allowance for this month is: RM " +mobileallowance);
+		variablepay = petrolallowance+mobileallowance;
+		System.out.println("Variable pay: RM " +variablepay);
+		
+		System.out.println();
+		System.out.println("*************************** Bonus *******************************");
+		System.out.println("How many times have you met with outside clients this month? : ");
+		//Put 0 if you didn't met any clients
+		client = input.nextInt();
+		bonus = (client*100);
+		System.out.println("Your bonus for this month: RM " +bonus);
+		
+		System.out.println("_________________________________________________________________");
+		System.out.println();
+		System.out.println("---------------------------[Section 3]---------------------------");
+		System.out.println();
+		
+		System.out.println("***********************Statutory Contribution********************");
+		System.out.println();
+		EPF = (basicsalary*0.13);
+		System.out.println("EPF Employee Contribution: RM " +EPF);
+		
+		SOCSO = 6.25;
+		System.out.println("Rate of contribution for Employees' Social Security\n "
+						+ "when wages exceed RM1200 but not RM1300: RM" +SOCSO);
+		tax = (basicsalary*0.1);
+		System.out.println("Tax deduction: RM " +tax);
+		
+		System.out.println();
+		statutorycontribution = EPF+SOCSO+tax;
+		System.out.println("Your total statutory contribution: RM " +statutorycontribution);
+		System.out.println("_________________________________________________________________");
+		System.out.println();
+		
+		System.out.println("----------------------------[Section 4]---------------------------");
+		System.out.println();
+		
+		netsalary = (basicsalary + (bonus+variablepay) - (statutorycontribution));
+		System.out.println("Your net salary for this month: RM " +netsalary);
+		System.out.println();
+		System.out.println("__________________________________________________________________");
+		
+		
+		
+
+	}
+
+}
