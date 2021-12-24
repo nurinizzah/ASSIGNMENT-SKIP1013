@@ -1,0 +1,56 @@
+_________________________________________________________________
+---------------[Welcome to UUM Salary Calculator]----------------
+_________________________________________________________________
+
+
+This program is to help new employees to calculate their salaries
+ which have been added and subtracted by various sectors such as
+ bonuses, taxes, EPF, SOCSO and so on
+
+_________________________________________________________________
+
+--------------------------[Section 1]----------------------------
+
+Please enter your name: 
+Nurin Izzah Binti Ishak
+Please enter your ID: 
+288063
+Please enter your NRIC (without (-)): 
+020415140514
+_________________________________________________________________
+
+--------------------------[Section 2]----------------------------
+
+Basic Salary: RM 1200.0
+The salary is not include with variable pay which is
+ petrol allowance and mobile allowance
+
+************************* Variable Pay **************************
+Your petrol allowance for this month is: RM 100.0
+Your mobile allowance for this month is: RM 50.0
+Variable pay: RM 150.0
+
+*************************** Bonus *******************************
+How many times have you met with outside clients this month? : 
+2
+Your bonus for this month: RM 200.0
+_________________________________________________________________
+
+---------------------------[Section 3]---------------------------
+
+***********************Statutory Contribution********************
+
+EPF Employee Contribution: RM 156.0
+Rate of contribution for Employees' Social Security
+ when wages exceed RM1200 but not RM1300: RM6.25
+Tax deduction: RM 120.0
+
+Your total statutory contribution: RM 282.25
+_________________________________________________________________
+
+----------------------------[Section 4]---------------------------
+
+Your net salary for this month: RM 1267.75
+
+__________________________________________________________________
+
