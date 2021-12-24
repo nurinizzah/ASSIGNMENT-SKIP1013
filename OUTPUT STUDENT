@@ -1,0 +1,40 @@
+===============WELCOME TO MINI ACCOUNTANT CALCULATOR===============
+This system is to help student to know how much money they had expense in a month
+Please fill in the blank for the requirement
+
+***************Section A***************
+Please enter your name = 
+Ainur
+Please enter your age = 
+19
+Please enter your matric number = 
+288091
+What is your current year studies = 
+2021
+Please enter your qualification level (Diploma, FoundationDegree , BachelorsDegree, MasterDegree, PHD) = 
+BachelorsDegree
+****************************************
+
+***************Section B***************
+Please enter your allowance = RM
+3500
+Please enter your university fees = RM
+500
+Please enter your total meals expense in a day = RM
+18
+Please enter your total laundry expense in a week = RM
+5
+Please enter your telephone bills for a month = RM
+30
+Please enter your total expenses for books and stationaries = RM
+50
+****************************************
+
+***************Section C***************
+Your total amount in your account for each month is RM 583.33
+Please enter your total money added = RM
+1000
+All the total expenses for you in a month is RM 1140.00
+Your total balance in your account after you finish settling all the expenses is RM 443.33
+Your total amount for saving in this month is RM 133.00
+***************************************
