@@ -1,0 +1,144 @@
+package assignment1;
+
+import java.util.Scanner;
+
+public class Assignment_1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner(System.in);
+		
+		String name;
+		String gender;
+		double uumtouch;
+		String email;
+		int phone;
+		int code;
+		int age;
+		String bloodtype;
+		String condition;
+		String xray;
+		double xrayser=1;
+		double bloodtest=1;
+		double checkup;
+		double service = 5;
+		double panadol = 10;
+		double antibiotics = 8;
+		double med1, totalmed1;
+		double med2, totalmed2;
+		double totalpayment;
+		double balance;
+		double weight;
+		double height;
+		double bmi;
+		double diet=5;
+		
+		
+		
+		System.out.println("------------------------Welcome to the MEDICAL UUM------------------------");
+		System.out.println("-------------------------WE SHARE WE CARE WE LOVE-------------------------");
+		
+		System.out.println("A reminder to all the patient to fill up the all the information");
+		System.out.println("It is advisable for patient to spare a maximum of rm50 for the medications and services charges");
+		System.out.print("Name : ");
+		name = input.nextLine();
+		System.out.print("Age : ");
+		age = input.nextInt();
+		System.out.print("Gender : ");
+		gender = input.next();
+		System.out.print("Personal e-mail : ");
+		email = input.next();
+		System.out.print("Phone number : ");
+		phone = input.nextInt();
+		System.out.print("Please state your UUMONETOUCH balance : RM ");
+		uumtouch = input.nextDouble();
+		System.out.println("Remind that the created code must be in numerical code");
+		System.out.print("Code : ");
+		code = input.nextInt();
+		System.out.println("\n");
+		
+		
+		System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.println("Details that must be filled by the doctors below");
+		System.out.print("Blood Type : ");
+		bloodtype = input.next();
+		System.out.print("Condition of heart rate : ");
+		condition = input.next();
+		System.out.print("X-ray details : ");
+		xray = input.next();
+		System.out.print("Enter weight in Kilogram: ");
+		weight = input.nextDouble();
+		System.out.print("Enter your height in Meter: ");
+		height = input.nextDouble();
+		bmi = weight/(height*height);
+		System.out.printf("The BMI for this patient is : %.2f ",bmi);
+		System.out.print("\n");
+		System.out.println("Insert the INTAKE medication needed by the patients below");
+		System.out.print("Packs of panadol : ");
+		med1 = input.nextDouble();
+		totalmed1 = med1*panadol;
+		System.out.print("Packs needed of antibiotics : ");
+		med2 = input.nextDouble();
+		totalmed2 = med2*antibiotics;
+        System.out.println("\n");
+        
+		
+        checkup = bloodtest+xrayser;
+		
+		System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+		
+		
+        System.out.println("These are the charges of the medications and services");
+		
+        System.out.println("[ SERVICE OF MEDICAL CHECKUP : RM "+service+"]"); 
+        System.out.println("[ PANADOL : RM "+panadol+"]");
+        System.out.println("[ ANTIBIOTICS : RM "+antibiotics+"]");
+        System.out.println("[ BLOOD TEST AND XRAY SCAN : RM" +checkup+"]");
+        System.out.println("[DIETICIAN SERVICES : RM" + diet+"]" );
+        
+        System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+        
+        System.out.println("These are the charts of the body mass index you have");
+        System.out.println("If your BMI is less than 18.5 : UNDERWEIGHT ");
+        System.out.println("If your BMI is more than equal 18.5 and less than 24.9 : NORMAL ");
+        System.out.println("If your BMI is less than 30  : OVERWEIGHT ");
+        System.out.println("If your BMI is more than 30 : OBESE ");
+        
+        System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+
+        System.out.println("\n");
+        totalpayment = (totalmed1 + totalmed2 +service+checkup+diet)/2;
+        balance = uumtouch-totalpayment;
+
+		
+		System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.println("Details of the patient below");
+		System.out.println("Full name : "+name);
+		System.out.println("Current age : "+age);
+		System.out.println("Gender : "+gender);
+		System.out.println("Personal E-mail : "+email);
+		System.out.println("Current phone number : "+phone);
+		System.out.println("Current UUMONETOUCHBALANCE : RM "+uumtouch);
+		System.out.println("Code : " +code);
+		System.out.println("Blood Type : "+bloodtype);
+		System.out.println("Condition of heart rate : "+condition);
+		System.out.println("X-ray details : "+xray);
+		System.out.printf("BMI : %.2f ",bmi);
+
+		System.out.println("\n");
+
+	
+		System.out.println("Please proceed for the payment by UUMONETOUCH");
+		System.out.printf("Your total for medical check-up for today : RM %.2f ",totalpayment);
+		System.out.println("\n");
+		System.out.printf("Balance of your payment : RM %.2f " ,balance);
+		System.out.println("\n");
+		
+		
+		System.out.println("--------------------------------------------------------------------------------------------------------------------------------------------");
+		System.out.println("If your BMI is under OBESE, please wait for the next appointment");
+		
+	}
+
+}
