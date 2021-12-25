@@ -1,0 +1,206 @@
+package assignments;
+
+import java.util.Scanner;
+
+public class Assignment_1 {
+
+	public static void main(String[] args) {
+		
+		    Scanner sc = new Scanner(System.in);
+		    
+		    String name, matricNumber, subjectCode;
+		    int semester = 1, creditHours = 3;
+		    double quiz, assignment, project_exam;
+		    double mark1, mark2, mark3, mark4, mark5, mark6;
+		    double totalP1, totalP2, totalP3, totalP4, totalP5, totalP6;
+		    double pointEarned, totalCreditHours; 
+		    double pointV1, pointV2, pointV3, pointV4, pointV5, pointV6;
+		    double GPA;
+			
+			System.out.println(" **************************************************************************************************** ");
+			System.out.println(" *                             BACHELOR OF COMPUTER SCIENCE WITH HONOURS                            * ");
+			System.out.println(" **************************************************************************************************** ");
+			
+			System.out.println("\n - - - - -// Welcome to the GPA Tracking System //- - - - - " + "\n");
+			
+			System.out.println("\n    Hello! Please fill the form before proceeding." + "\n");
+			
+			System.out.print("     > Full Name             : ");
+			name = sc.nextLine();
+			
+			System.out.print("     > Matric Number         : ");
+			matricNumber = sc.next();
+			
+			System.out.print("     > Semester Status       : ");
+			semester = sc.nextInt();
+			
+			System.out.println("\n       |---------------------------------------------------------|");
+			System.out.println("       |                      HELLO!                             |");
+			System.out.println("       |---------------------------------------------------------|");
+			System.out.println("       |   <> Name            : " +name+ "      |");
+			System.out.println("       |   <> Matric number   : " +matricNumber+ "                          |");
+			System.out.println("       |   <> Semester Status : " +semester+ "                                |");
+			System.out.println("       |---------------------------------------------------------|" + "\n");
+			
+			System.out.println("\n\n **************************************************************************************************** ");
+			
+            System.out.println("\n  This is the list of subjects that you have taken this semester. ");
+            
+            System.out.println("\n **************************************************************************************************** ");
+            
+            System.out.println("\n       |-------------------------------------------------------------------------------------|");
+			System.out.println("       |                                    SEMESTER 1                                       |");
+			System.out.println("       |-------------------------------------------------------------------------------------|");
+			System.out.println("       |                        BACHELOR OF COMPUTER SCIENCE (HONS.)                         |");
+			System.out.println("       |-------------------------------------------------------------------------------------|");
+			System.out.println("       |  CODE        SUBJECT NAME                                  CREDIT HOURS             |");
+			System.out.println("       |                                                                                     |");
+			System.out.println("       |  SKIK1013    Computer Organizations and Architecture             3                  |");
+			System.out.println("       |  SKIP1013    Programming 1                                       3                  |");
+			System.out.println("       |  SCQM1013    Mathematics for Computing                           3                  |");
+			System.out.println("       |  MPU1013     Penghayatan Etika dan Peradaban                     3                  |");
+			System.out.println("       |  MPU1043     Falsafah dan Isu Semasa                             3                  |");
+			System.out.println("       |  SADN1033    Kenegaraan                                          3                  |");
+			System.out.println("       |-------------------------------------------------------------------------------------|" + "\n");    //assignment - 50%
+                                                                                                                                            //quiz - 20%
+                                                                                                                                            //final exam/project - 30%
+            System.out.print("        Please enter the marks for the following assessments : ");
+            
+            System.out.print("\n\n           --- SKIP1013 --- ");
+            System.out.print("\n           <> Quiz               : ");
+            quiz = sc.nextInt();
+            System.out.print("           <> Assignment         : ");
+            assignment = sc.nextInt();
+            System.out.print("           <> Project/Final Exam : ");
+            project_exam = sc.nextInt();
+            
+            mark1 = quiz + assignment + project_exam;
+            
+            System.out.println("\n           The total mark for SKIP1013 is " +mark1);
+            
+            
+            System.out.print("\n\n           --- SKIK1013 --- ");
+            
+            System.out.print("\n           <> Quiz               : ");
+            quiz = sc.nextInt();
+            System.out.print("           <> Assignment         : ");
+            assignment = sc.nextInt();
+            System.out.print("           <> Project/Final Exam : ");
+            project_exam = sc.nextInt();
+            
+            mark2 = quiz + assignment + project_exam;
+            
+            System.out.println("\n           The total mark for SKIK1013 is " +mark2); 
+           
+           
+            System.out.print("\n\n           --- SCQM1013 --- ");
+            System.out.print("\n           <> Quiz               : ");
+            quiz = sc.nextInt();
+            System.out.print("           <> Assignment         : ");
+            assignment = sc.nextInt();
+            System.out.print("           <> Project/Final Exam : ");
+            project_exam = sc.nextInt();
+            
+            mark3 = quiz + assignment + project_exam;
+            
+            System.out.println("\n           The total mark for SCQM1013 is " +mark3);
+            
+            
+            System.out.print("\n\n           --- SADN1033 --- ");
+            
+            System.out.print("\n           <> Quiz               : ");
+            quiz = sc.nextInt();
+            System.out.print("           <> Assignment         : ");
+            assignment = sc.nextInt();
+            System.out.print("           <> Project/Final Exam : ");
+            project_exam = sc.nextInt();
+            
+            mark4 = quiz + assignment + project_exam;
+            
+            System.out.println("\n           The total mark for SADN1033 is " +mark4); 
+            
+            
+            System.out.print("\n\n           --- MPU1013 --- ");
+            System.out.print("\n           <> Quiz               : ");
+            quiz = sc.nextInt();
+            System.out.print("           <> Assignment         : ");
+            assignment = sc.nextInt();
+            System.out.print("           <> Project/Final Exam : ");
+            project_exam = sc.nextInt();
+            
+            mark5 = quiz + assignment + project_exam;
+            
+            System.out.println("\n           The total mark for MPU1013 is " +mark5);
+            
+            
+            System.out.print("\n\n           --- MPU1043 --- ");
+            
+            System.out.print("\n           <> Quiz               : ");
+            quiz = sc.nextInt();
+            System.out.print("           <> Assignment         : ");
+            assignment = sc.nextInt();
+            System.out.print("           <> Project/Final Exam : ");
+            project_exam = sc.nextInt();
+            
+            mark6 = quiz + assignment + project_exam;
+            
+            System.out.println("\n           The total mark for MPU1043 is " +mark6); 
+           
+            
+			
+			System.out.println("\n\n **************************************************************************************************** ");
+			
+			System.out.println("\n                 Grade Point Average (GPA) Calculation " + "\n");
+			
+			System.out.println("\n **************************************************************************************************** ");
+			
+			System.out.println("      |------------------------------------------------------------------|");
+			System.out.println("      |                        GRADE REFERENCE                           |");
+			System.out.println("      |------------------------------------------------------------------|");
+			System.out.println("      |    Marks (%)   |  Grade  |  Grade Points                         |");
+			System.out.println("      |                |         |                                       |");
+			System.out.println("      |    90 - 100    |    A+   |    4.00 (Excellent)                   |");
+			System.out.println("      |    80 - 89     |    A    |    4.00 (Excellent)                   |");
+			System.out.println("      |    75 - 79     |    A-   |    3.67 (Credit)                      |");
+			System.out.println("      |    70 - 74     |    B+   |    3.33 (Credit)                      |");
+			System.out.println("      |    65 - 69     |    B    |    3.00 (Credit)                      |");
+			System.out.println("      |    60 - 64     |    B-   |    2.67 (Good)                        |");
+			System.out.println("      |    55 - 59     |    C+   |    2.33 (Good)                        |");
+			System.out.println("      |    50 - 54     |    C    |    2.00 (Pass)                        |");
+			System.out.println("      |    45 - 49     |    C-   |    1.67 (Fail)                        |");
+			System.out.println("      |    40 - 44     |    D+   |    1.33 (Fail)                        |");
+			System.out.println("      |    35 - 39     |    D    |    1.00 (Fail)                        |");
+			System.out.println("      |     0 - 34     |    F    |    0.00 (Fail)                        |");
+			System.out.println("      |                |    X    |    Barred                             |");
+			System.out.println("      |                |    TL   |    Incomplete                         |");
+			System.out.println("      |                |   M/TM  |    Satisfactory/Not Satisfactory      |");
+			System.out.println("      |                |    TD   |    Withdraw                           |");
+			System.out.println("      |------------------------------------------------------------------|" + "\n");
+			
+			
+			System.out.print("\n      <> Please enter the grade point for SKIP1013 : ");
+			pointV1 = sc.nextDouble();
+			System.out.print("\n      <> Please enter the grade point for SKIK1013 : ");
+			pointV2 = sc.nextDouble();
+			System.out.print("\n      <> Please enter the grade point for SCQM1013 : ");
+			pointV3 = sc.nextDouble();
+			System.out.print("\n      <> Please enter the grade point for SADN1033 : ");
+			pointV4 = sc.nextDouble();
+			System.out.print("\n      <> Please enter the grade point for MPU1013  : ");
+			pointV5 = sc.nextDouble();
+			System.out.print("\n      <> Please enter the grade point for MPU1043  : ");
+			pointV6 = sc.nextDouble();
+			
+			totalCreditHours = creditHours * 6;
+			pointEarned = (pointV1 * 3) + (pointV2 * 3) + (pointV3 * 3) + (pointV4 * 3) + (pointV5 * 3) + (pointV6 * 3);
+			GPA = pointEarned / totalCreditHours;
+			
+			System.out.println("\n      />> Total credit hours for Semester 1 is " +totalCreditHours);
+			System.out.println("      />> Total grade points earned for Semester 1 is " +pointEarned+ "\n");
+			System.out.printf("\n      />> GPA for Semester 1 is %2f" ,GPA);
+			
+	}
+}
+			
+
+
