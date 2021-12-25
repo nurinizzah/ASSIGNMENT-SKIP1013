@@ -1,0 +1,72 @@
+package code1;
+
+import java.util.Scanner;
+public class Library {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		String name, books, date1, date2,proceed;
+		int Matric_id, age, sem;
+		int totalbooks = 10000, fine = 1;
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Welcome to the University Library Management System.");
+		System.out.println("Please enter your personal information to proceed to borrow a book.");
+		System.out.print("Please enter your name: ");
+		name = sc.nextLine();                                //Students enter their name
+		
+		System.out.print("Please enter your Matric id: ");
+		Matric_id = sc.nextInt();							//Students enter their age
+		
+		System.out.print("Please enter your age: ");
+		age = sc.nextInt();
+		
+		System.out.print("Please enter your current semester: Semester ");
+		sem = sc.nextInt();									//Students enter their current semester
+		
+		System.out.println(" ");
+		
+		System.out.println("=============================================================================================== ");
+		
+		System.out.println("There are  "+totalbooks+" books that students can borrow");
+		System.out.println("Enter the name of books you want to borrow ");
+		books = sc.next(); 									//Students enter the book that they wanted to borrow
+		
+		System.out.println("Please enter the date of issuing following date of return.");
+		
+		date1 = sc.next();									//Students enter the date of issuing
+		date2= sc.next();									//Students enter the date of return
+		
+		totalbooks = totalbooks - 1;						//Total books updated 
+		
+		System.out.println("Fine will be given if students return the books past date of return "); //System explain on how the fined implemented
+		System.out.println("The amount of fix fined is RM "+fine);
+		System.out.println("The total amount of fined will calculated by amount of fix fined*days past date of return");
+		
+	
+		System.out.println(" ");
+		
+		
+		System.out.println("=============================================================================================== ");
+		
+		System.out.println("Name: "+name);
+		System.out.println("Age: "+age);
+		System.out.println("Current Semester: "+sem);
+		System.out.println("Borrowed Books: "+books);
+		System.out.println("Date of issuing: "+date1);
+		System.out.println("Date of return: "+date2);                   //System display back the borrowing system for user confirmation
+		
+		
+		System.out.println("=============================================================================================== ");
+		
+		System.out.println(" ");
+		
+		System.out.println("Thank you for using the University Library Management Sytsem ");
+		System.out.println("There are  "+ totalbooks+ " books remaining in the library");
+		System.out.println("Have a nice day! ");
+		
+
+	}
+
+}
