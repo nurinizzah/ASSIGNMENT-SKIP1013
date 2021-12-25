@@ -1,0 +1,30 @@
+Welcome to the University Library Management System.
+Please enter your personal information to proceed to borrow a book.
+Please enter your name: Anuarul Irfan
+Please enter your Matric id: 288181
+Please enter your age: 19
+Please enter your current semester: Semester 1
+ 
+=============================================================================================== 
+There are  10000 books that students can borrow
+Enter the name of books you want to borrow 
+Kingsmen
+Please enter the date of issuing following date of return.
+12/12/2021
+15/12/2021
+Fine will be given if students return the books past date of return 
+The amount of fix fined is RM 1
+The total amount of fined will calculated by amount of fix fined*days past date of return
+ 
+=============================================================================================== 
+Name: Anuarul Irfan
+Age: 19
+Current Semester: 1
+Borrowed Books: Kingsmen
+Date of issuing: 12/12/2021
+Date of return: 15/12/2021
+=============================================================================================== 
+ 
+Thank you for using the University Library Management Sytsem 
+There are  9999 books remaining in the library
+Have a nice day!
